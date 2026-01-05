@@ -8,8 +8,6 @@
       font-family: Arial, sans-serif;
       padding: 30px;
     }
-
-    /* Button styling */
     #colorBtn {
       padding: 12px 20px;
       font-size: 16px;
@@ -19,8 +17,6 @@
       cursor: pointer;
       margin-bottom: 20px;
     }
-
-    /* Calculator styling */
     input {
       padding: 8px;
       margin: 5px;
@@ -39,16 +35,10 @@
   </style>
 </head>
 <body>
-
-  <!-- 1. Button Color Change -->
   <h3>1. Button Color Change</h3>
   <button id="colorBtn" onclick="changeColor()">Click Me</button>
-
-  <!-- 2. Greeting Alert -->
   <h3>2. Greeting Alert</h3>
   <button onclick="showGreeting()">Show Greeting</button>
-
-  <!-- 3. Calculator -->
   <h3>3. Simple Calculator (Addition)</h3>
   <input type="number" id="num1" placeholder="Enter number 1">
   <input type="number" id="num2" placeholder="Enter number 2">
@@ -58,13 +48,10 @@
   <div id="result"></div>
 
   <script>
-    // 1. Change button color
     function changeColor() {
       const btn = document.getElementById("colorBtn");
       btn.style.backgroundColor = "green";
     }
-
-    // 2. Greeting based on time
     function showGreeting() {
       const hour = new Date().getHours();
       let message;
@@ -79,8 +66,6 @@
 
       alert(message);
     }
-
-    // 3. Add two numbers
     function addNumbers() {
       const num1 = parseFloat(document.getElementById("num1").value);
       const num2 = parseFloat(document.getElementById("num2").value);
